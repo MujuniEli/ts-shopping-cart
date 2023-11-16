@@ -10,11 +10,11 @@ function App() {
 
   return (
     
-      <Container>
+      <Container className='mb-4'>
         <Routes>
             <Route path='/' element={<Home />}></Route>
-            <Route path='/' element={<Store />}></Route>
-            <Route path='/' element={<About />}></Route>
+            <Route path='/store' element={<Store />}></Route>
+            <Route path='/about' element={<About />}></Route>
         </Routes>
       </Container>
     
