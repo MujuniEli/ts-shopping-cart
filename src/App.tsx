@@ -5,12 +5,14 @@ import { Home } from './views/Home'
 import { Store } from './views/Store'
 import { About } from './views/About'
 import { Navbar } from './components/Navbar'
+import { ShoppingCartProvider } from './context/shoppingCartContext'
 
 function App() {
   
 
   return (
     <>
+    <ShoppingCartProvider>
       <Navbar />
       <Container className='mb-4'>
         <Routes>
@@ -19,6 +21,7 @@ function App() {
             <Route path='/about' element={<About />}></Route>
         </Routes>
       </Container>
+    </ShoppingCartProvider>
     </>
   )
 }
